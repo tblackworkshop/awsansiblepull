@@ -1,0 +1,8 @@
+---
+- name: checknano
+  hosts: linux
+  tasks:
+  - name: check if nano is there
+    yum:
+      name: nano
+      state: latest
